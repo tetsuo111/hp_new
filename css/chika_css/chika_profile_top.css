@@ -1,0 +1,76 @@
+
+
+
+.chika_profile_top hr{
+  float: right;
+  color:#99CC00;
+}
+
+.chika_profile_top h3{
+  padding: 50px  0px 0px 0px;
+  margin: 0px  0px 0px  0px;
+  border-top:0px;
+  color:#99CC00;
+}
+
+
+
+/* 下の子の子要素 */
+.points > div {
+  /*  */
+  /* 表示はインライン要素だが高さも幅も指定できる */
+ display: inline-block;
+ width: 200px;
+ margin-right: 15px;
+ /* 文字の位置を揃える*/
+ vertical-align: top;
+}
+
+.points .image {
+ position: relative;
+}
+
+.point-triangle {
+ position: relative;
+}
+
+.point-triangle:after {
+ position: absolute;
+ content: " ";
+ height: 0;
+ width: 0;
+}
+
+.point-triangle span {
+ position: absolute;
+ content: "";
+ font-size: 10px;
+ font-weight: bold;
+ color: #fff;
+ z-index:100;
+}
+
+.point-triangle-rb:after {
+ bottom: 0;
+ right: 0;
+ border-top:3em solid transparent;
+ border-right:3em solid #FF797D;
+}
+
+.point-triangle-rb span {
+ bottom: .6em;
+ right: 0;
+ /* 回転しましょう */
+ transform: rotate(-45deg);
+ /*  */
+ -webkit-transform: rotate(-45deg);
+ /*  */
+ -ms-transform: rotate(-45deg);
+}
+
+.image.point-triangle.point-triangle-rb td{
+  margin :0;
+  border: 0;
+  padding:0;
+}
+
